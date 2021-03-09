@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Landing Page</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Travel</h2>
+      </header>
+
+      <video muted loop autoplay class="video">
+        <source src="./pexels_city_night_full_hd.mp4" type="video/mp4" />
+      </video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Never stop</h2>
+        <h3>Exploring the world</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, obcaecati
+          magni! Libero deleniti aliquid excepturi optio ad? Itaque, numquam
+          cumque.
+        </p>
+        <a href="#" class="toggle">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-youtube-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <div class="menu-close"><i class="fa fa-times"></i></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const showCase = document.querySelector(".showcase");
+      const btnExplore = document.querySelector(".toggle");
+      const btnMenuCLose = document.querySelector(".menu-close");
+
+      const toggleShowCaseActiveClass = () =>
+        showCase.classList.toggle("active");
+      btnMenuCLose.addEventListener("click", toggleShowCaseActiveClass);
+      btnExplore.addEventListener("click", toggleShowCaseActiveClass);
+    </script>
+  </body>
+</html>
